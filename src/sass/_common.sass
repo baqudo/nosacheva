@@ -1,5 +1,66 @@
+// шрифты
++font(Helios, Helios)
+=H
+	font-family: Helios, sans-serif
+
++font(HeliosLight, HeliosLight) 
+=H-l
+	font-family: HeliosLight, sans-serif
+
++font("PT Serif", PTSerif)
+=PTs
+	font-family: "PT Serif", sans-serif 
+
+
+// colors
+$color-pink: #cb3461
+=cpin
+	color: $color-pink
+=bcpin
+  background-color: $color-pink
+
+$color-purple: #500eac
+=cpur
+	color: $color-purple
+=bcpur
+	background-color: $color-purple
+
+
+// buttons
+=btn
+  +css-lock(16, 25, 480, 960)
+  border: none
+  border-radius: 2em
+  line-height: 2.5em 
+  padding: 0 1.2em
+  box-shadow: 0 3px 9px rgba(1, 1, 1, 0.47)
+  background-color: rgba(255, 6, 35, 0)
+  background-image: linear-gradient(to top, #410891 0%, #410891 1%, #601fbb 100%, #601fbb 100%)
+  color: #fff 
+  // width: 12.26em 
+  // height: 2.57em
+.button
+  display: inline-block
+  +btn
+  transition: 1s
+  outline: none
+  &:hover
+    outline: none
+    color: #fff
+    background-color: rgba(255, 6, 35, 1)
+// styles
+html
+  font-size: 100% 
 body
   background: #FFF
-  +css-lock(16, 50, 600, 1000)
-  line-height: 1.4
+  font-size: 100% 
+  line-height: 1.4em
+  +H
 
+h1, h2, h3
+  +PTs
+
+.wrapper
+  max-width: 940px
+  margin: 0 auto
+  +clr

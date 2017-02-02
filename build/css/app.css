@@ -106,10 +106,73 @@ html {
   fill: #000;
 }
 
+@font-face {
+  font-family: Helios;
+  src: url("../fonts/Helios.woff2") format("woff2"), url("../fonts/Helios.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: HeliosLight;
+  src: url("../fonts/HeliosLight.woff2") format("woff2"), url("../fonts/HeliosLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/PTSerif.woff2") format("woff2"), url("../fonts/PTSerif.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button {
+  display: inline-block;
+  font-size: calc(16px + (25 - 16) * ((100vw - 480px) / (960 - 480)));
+  border: none;
+  border-radius: 2em;
+  line-height: 2.5em;
+  padding: 0 1.2em;
+  box-shadow: 0 3px 9px rgba(1, 1, 1, 0.47);
+  background-color: rgba(255, 6, 35, 0);
+  background-image: linear-gradient(to top, #410891 0%, #410891 1%, #601fbb 100%, #601fbb 100%);
+  color: #fff;
+  transition: 1s;
+  outline: none;
+}
+
+.button:hover {
+  outline: none;
+  color: #fff;
+  background-color: #ff0623;
+}
+
+html {
+  font-size: 100%;
+}
+
 body {
   background: #FFF;
-  font-size: calc(16px + (50 - 16) * ((100vw - 600px) / (1000 - 600)));
-  line-height: 1.4;
+  font-size: 100%;
+  line-height: 1.4em;
+  font-family: Helios, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "PT Serif", sans-serif;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+
+.wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .block {
@@ -118,15 +181,157 @@ body {
   display: flex;
 }
 
-@media (min-width: 1000px){
-  body{
-    font-size: 50px;
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(12, 7, 4, 0.7);
+  color: #FFF;
+  text-align: center;
+}
+
+.header__button {
+  margin-top: 18px;
+  font-size: calc(13px + (16 - 13) * ((100vw - 480px) / (960 - 480)));
+}
+
+.logo {
+  margin: 15px 0 17px;
+  float: left;
+  text-align: left;
+  line-height: 24px;
+}
+
+.logo__title {
+  font-family: HeliosLight, sans-serif;
+  font-size: calc(14px + (20 - 14) * ((100vw - 480px) / (960 - 480)));
+}
+
+.logo__name {
+  font-family: Helios, sans-serif;
+  font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.telephone {
+  margin-top: 14px;
+  text-align: left;
+  float: right;
+  font-family: HeliosLight, sans-serif;
+  font-size: calc(10px + (13 - 10) * ((100vw - 480px) / (960 - 480)));
+}
+
+.telephone__title {
+  opacity: 0.86;
+  line-height: 1.8em;
+}
+
+.telephone__number {
+  font-family: Helios, sans-serif;
+  font-size: calc(20px + (28 - 20) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 700;
+  line-height: 1.07143em;
+}
+
+.top {
+  background-color: #ccc;
+  color: #ffffff;
+  padding-top: 80px;
+}
+
+.top__text {
+  opacity: 0.9;
+  color: #ffffff;
+  font-family: Helios, sans-serif;
+  font-size: 1.375em;
+  margin: 10px 0 10px 50%;
+}
+
+.top__button {
+  margin-bottom: 20px;
+  font-size: calc(13px + (23 - 13) * ((100vw - 480px) / (960 - 480)));
+  margin-left: 50%;
+}
+
+.top__line {
+  text-align: center;
+  font-family: "PT Serif", sans-serif;
+  font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2.3em;
+  border-radius: 7px;
+  background-image: linear-gradient(to right, transparent 10%, rgba(203, 52, 97, 0.93) 25%, rgba(203, 52, 97, 0.93) 75%, transparent 90%);
+}
+
+.top .title-h1 {
+  margin-left: 50%;
+}
+
+.title-h1 {
+  color: #ffffff;
+  font-size: calc(20px + (48 - 20) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1em;
+  margin: 30px 0 20px;
+}
+
+@media (min-width: 960px){
+  .button{
+    font-size: 25px;
+  }
+  .header__button{
+    font-size: 16px;
+  }
+  .logo__title{
+    font-size: 20px;
+  }
+  .logo__name{
+    font-size: 22px;
+  }
+  .telephone{
+    font-size: 13px;
+  }
+  .telephone__number{
+    font-size: 28px;
+  }
+  .top__button{
+    font-size: 23px;
+  }
+  .top__line{
+    font-size: 24px;
+  }
+  .title-h1{
+    font-size: 48px;
   }
 }
 
-@media (max-width: 600px){
-  body{
+@media (max-width: 480px){
+  .button{
     font-size: 16px;
+  }
+  .header__button{
+    font-size: 13px;
+  }
+  .logo__title{
+    font-size: 14px;
+  }
+  .logo__name{
+    font-size: 16px;
+  }
+  .telephone{
+    font-size: 10px;
+  }
+  .telephone__number{
+    font-size: 20px;
+  }
+  .top__button{
+    font-size: 13px;
+  }
+  .top__line{
+    font-size: 14px;
+  }
+  .title-h1{
+    font-size: 20px;
   }
 }
 

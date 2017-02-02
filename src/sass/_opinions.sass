@@ -1,0 +1,40 @@
+.opinions
+	text-align: center
+	margin-bottom: 3.3em 
+	.opinion
+		display: inline-block
+		max-width: 33% 
+		vertical-align: top 
+.opinion
+	text-align: center
+	&:after
+		content: ""
+		display: inline-block
+		width: 60px
+		height: 4px
+		+bcpin
+		margin: 0.8em 0
+	&__img
+		position: relative
+		text-align: center
+		width: 192px
+		height: 192px
+		margin: 0 auto 
+		border-radius: 50%
+		overflow: hidden
+		img
+			max-width: 100%
+			max-height: 100% 
+			+vcenter
+	&__title
+		color: #4f4b4b
+		+H
+		+css-lock(12, 16, 480, 960)
+		// font-size: 16px
+		line-height: 2.625em
+	&__text
+		color: #7d7d7d
+		+PTs
+		+css-lock(16, 20, 480, 960)
+		// font-size: 20px
+		line-height: 1.05em

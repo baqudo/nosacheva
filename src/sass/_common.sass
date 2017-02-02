@@ -9,7 +9,15 @@
 
 +font("PT Serif", PTSerif)
 =PTs
-	font-family: "PT Serif", sans-serif 
+  font-family: "PT Serif", sans-serif 
+
++font("PT Serif Bold", PTSerifBold)
+=PTs-bold
+  font-family: "PT Serif Bold", sans-serif 
+
++font("PT Serif Bold Italic", PTSerifBoldItalic)
+=PTs-bi
+	font-family: "PT Serif Bold Italic", sans-serif 
 
 
 // colors
@@ -64,3 +72,37 @@ h1, h2, h3
   max-width: 940px
   margin: 0 auto
   +clr
+
+.title-h1
+  color: #ffffff
+  +css-lock(28, 48, 480, 960)
+  // font-size: em(48)
+  line-height: 0.95em
+  margin: 0.5em 0
+
+.title
+  text-align: center
+.title-logo
+  +css-lock(22, 42, 480, 960)
+  // font-size: 42px 
+  margin-top: 1.65em 
+  position: relative
+  height: 90px 
+  .icon
+    +vcenter
+
+.title-h2
+  +PTs
+  +cpur
+  +css-lock(28, 48, 480, 960)
+  // font-size: 48px
+  line-height: 1.2em
+  margin-top: 0.35em 
+
+.title-about
+  color: #909090
+  +H-l
+  +css-lock(16, 28, 480, 960)
+  // font-size: 28px
+  line-height: 1.1em
+  margin-bottom: 1.05em 

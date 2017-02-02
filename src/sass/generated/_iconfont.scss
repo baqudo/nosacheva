@@ -10,6 +10,15 @@
 }
 
 $icon-facebook: "\EA01";
+$icon-flag: "\EA02";
+$icon-like: "\EA03";
+$icon-message: "\EA04";
+$icon-mortarboard: "\EA05";
+$icon-pinmap: "\EA06";
+$icon-star: "\EA07";
+$icon-title-bg: "\EA08";
+$icon-video: "\EA09";
+$icon-view: "\EA0A";
 
 
 %icon {
@@ -29,3 +38,12 @@ $icon-facebook: "\EA01";
 }
 
 .icon-facebook:before { content: $icon-facebook; }
+.icon-flag:before { content: $icon-flag; }
+.icon-like:before { content: $icon-like; }
+.icon-message:before { content: $icon-message; }
+.icon-mortarboard:before { content: $icon-mortarboard; }
+.icon-pinmap:before { content: $icon-pinmap; }
+.icon-star:before { content: $icon-star; }
+.icon-title-bg:before { content: $icon-title-bg; }
+.icon-video:before { content: $icon-video; }
+.icon-view:before { content: $icon-view; }

@@ -100,10 +100,100 @@ html {
   content: "";
 }
 
+.icon-flag:before {
+  content: "";
+}
+
+.icon-like:before {
+  content: "";
+}
+
+.icon-message:before {
+  content: "";
+}
+
+.icon-mortarboard:before {
+  content: "";
+}
+
+.icon-pinmap:before {
+  content: "";
+}
+
+.icon-star:before {
+  content: "";
+}
+
+.icon-title-bg:before {
+  content: "";
+}
+
+.icon-video:before {
+  content: "";
+}
+
+.icon-view:before {
+  content: "";
+}
+
 .icon-facebook {
   width: 0.53em;
   height: 1em;
   fill: #000;
+}
+
+.icon-flag {
+  width: 1em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-like {
+  width: 1.12em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-message {
+  width: 0.98em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-mortarboard {
+  width: 1.35em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-pinmap {
+  width: 0.71em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-star {
+  width: 1.05em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-title-bg {
+  width: 1.84em;
+  height: 2.05em;
+  fill: #500eac;
+}
+
+.icon-video {
+  width: 1em;
+  height: 1em;
+  fill: #fff;
+}
+
+.icon-view {
+  width: 1.48em;
+  height: 1em;
+  fill: #fff;
 }
 
 @font-face {
@@ -123,6 +213,20 @@ html {
 @font-face {
   font-family: "PT Serif";
   src: url("../fonts/PTSerif.woff2") format("woff2"), url("../fonts/PTSerif.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif Bold";
+  src: url("../fonts/PTSerifBold.woff2") format("woff2"), url("../fonts/PTSerifBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Serif Bold Italic";
+  src: url("../fonts/PTSerifBoldItalic.woff2") format("woff2"), url("../fonts/PTSerifBoldItalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -175,6 +279,49 @@ h1, h2, h3 {
   clear: both;
 }
 
+.title-h1 {
+  color: #ffffff;
+  font-size: calc(28px + (48 - 28) * ((100vw - 480px) / (960 - 480)));
+  line-height: 0.95em;
+  margin: 0.5em 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-logo {
+  font-size: calc(22px + (42 - 22) * ((100vw - 480px) / (960 - 480)));
+  margin-top: 1.65em;
+  position: relative;
+  height: 90px;
+}
+
+.title-logo .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.title-h2 {
+  font-family: "PT Serif", sans-serif;
+  color: #500eac;
+  font-size: calc(28px + (48 - 28) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.2em;
+  margin-top: 0.35em;
+}
+
+.title-about {
+  color: #909090;
+  font-family: HeliosLight, sans-serif;
+  font-size: calc(16px + (28 - 16) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.1em;
+  margin-bottom: 1.05em;
+}
+
 .block {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,37 +331,39 @@ h1, h2, h3 {
 .header {
   width: 100%;
   position: fixed;
+  z-index: 9999;
   background-color: rgba(12, 7, 4, 0.7);
   color: #FFF;
   text-align: center;
 }
 
 .header__button {
-  margin-top: 18px;
   font-size: calc(13px + (16 - 13) * ((100vw - 480px) / (960 - 480)));
+  margin-top: 1.1em;
 }
 
 .logo {
-  margin: 15px 0 17px;
   float: left;
   text-align: left;
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 .logo__title {
   font-family: HeliosLight, sans-serif;
-  font-size: calc(14px + (20 - 14) * ((100vw - 480px) / (960 - 480)));
+  font-size: calc(12px + (20 - 12) * ((100vw - 480px) / (960 - 480)));
+  margin-top: 0.75em;
 }
 
 .logo__name {
   font-family: Helios, sans-serif;
-  font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
+  font-size: calc(14px + (22 - 14) * ((100vw - 480px) / (960 - 480)));
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 0.73em;
 }
 
 .telephone {
-  margin-top: 14px;
+  margin-top: 1em;
   text-align: left;
   float: right;
   font-family: HeliosLight, sans-serif;
@@ -230,54 +379,187 @@ h1, h2, h3 {
   font-family: Helios, sans-serif;
   font-size: calc(20px + (28 - 20) * ((100vw - 480px) / (960 - 480)));
   font-weight: 700;
-  line-height: 1.07143em;
+  line-height: 1.05em;
 }
 
 .top {
   background-color: #ccc;
+  background-image: url(../img/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
   color: #ffffff;
-  padding-top: 80px;
+  padding-top: 79px;
 }
 
 .top__text {
   opacity: 0.9;
-  color: #ffffff;
   font-family: Helios, sans-serif;
-  font-size: 1.375em;
-  margin: 10px 0 10px 50%;
+  font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.3em;
+  margin: 1.6em 1em 1.7em 50%;
 }
 
 .top__button {
-  margin-bottom: 20px;
+  margin-bottom: 4.45em;
   font-size: calc(13px + (23 - 13) * ((100vw - 480px) / (960 - 480)));
   margin-left: 50%;
 }
 
 .top__line {
   text-align: center;
-  font-family: "PT Serif", sans-serif;
-  font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
-  font-weight: 700;
-  font-style: italic;
+  font-family: "PT Serif Bold Italic", sans-serif;
+  font-size: calc(12px + (24 - 12) * ((100vw - 480px) / (960 - 480)));
   line-height: 2.3em;
-  border-radius: 7px;
-  background-image: linear-gradient(to right, transparent 10%, rgba(203, 52, 97, 0.93) 25%, rgba(203, 52, 97, 0.93) 75%, transparent 90%);
+  background-image: linear-gradient(to right, transparent 3%, rgba(203, 52, 97, 0.93) 15%, rgba(203, 52, 97, 0.93) 85%, transparent 97%);
 }
 
 .top .title-h1 {
   margin-left: 50%;
+  margin-top: 2.1em;
 }
 
-.title-h1 {
+.opinions {
+  text-align: center;
+  margin-bottom: 3.3em;
+}
+
+.opinions .opinion {
+  display: inline-block;
+  max-width: 33%;
+  vertical-align: top;
+}
+
+.opinion {
+  text-align: center;
+}
+
+.opinion:after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: #cb3461;
+  margin: 0.8em 0;
+}
+
+.opinion__img {
+  position: relative;
+  text-align: center;
+  width: 192px;
+  height: 192px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.opinion__img img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.opinion__title {
+  color: #4f4b4b;
+  font-family: Helios, sans-serif;
+  font-size: calc(12px + (16 - 12) * ((100vw - 480px) / (960 - 480)));
+  line-height: 2.625em;
+}
+
+.opinion__text {
+  color: #7d7d7d;
+  font-family: "PT Serif", sans-serif;
+  font-size: calc(16px + (20 - 16) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.05em;
+}
+
+.technique {
+  background-color: #fbfbfb;
+  border-top: 1px solid rgba(244, 244, 244, 0.66);
+  border-bottom: 1px solid rgba(244, 244, 244, 0.66);
+}
+
+.skills {
+  margin-bottom: 75px;
+}
+
+.skills > ol {
+  counter-reset: list1;
+  text-align: center;
+  vertical-align: top;
+}
+
+.skills > ol > li:before {
+  content: counter(list1) " ";
+  counter-increment: list1;
+}
+
+.skills__item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  color: #4f4b4b;
+  font-size: calc(12px + (16 - 12) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.5em;
+  max-width: 30%;
+  margin: 0 0.7em;
+}
+
+.skills__item b {
+  font-family: "PT Serif Bold", sans-serif;
+  font-size: calc(14px + (18 - 14) * ((100vw - 480px) / (960 - 480)));
+}
+
+.skills__item:before {
+  display: block;
+  font-size: calc(23px + (33 - 23) * ((100vw - 480px) / (960 - 480)));
+  margin: 1em auto 0.3em;
+  width: 1.52em;
+  height: 1.52em;
+  line-height: 1.52em;
+  border-radius: 50%;
+  background-color: #cb3461;
   color: #ffffff;
-  font-size: calc(20px + (48 - 20) * ((100vw - 480px) / (960 - 480)));
-  line-height: 1em;
-  margin: 30px 0 20px;
+}
+
+.skills__item:last-child {
+  font-size: calc(18px + (24 - 18) * ((100vw - 480px) / (960 - 480)));
+  font-family: "PT Serif Bold", sans-serif;
+  line-height: 0.8;
+  color: #cb3461;
+}
+
+.skills__item:last-child b {
+  font-size: calc(18px + (24 - 18) * ((100vw - 480px) / (960 - 480)));
+  line-height: 0.8em;
+  color: #474444;
+}
+
+.skills__item:last-child:before {
+  color: transparent;
+  background-color: transparent;
 }
 
 @media (min-width: 960px){
   .button{
     font-size: 25px;
+  }
+  .title-h1{
+    font-size: 48px;
+  }
+  .title-logo{
+    font-size: 42px;
+  }
+  .title-h2{
+    font-size: 48px;
+  }
+  .title-about{
+    font-size: 28px;
   }
   .header__button{
     font-size: 16px;
@@ -294,14 +576,35 @@ h1, h2, h3 {
   .telephone__number{
     font-size: 28px;
   }
+  .top__text{
+    font-size: 22px;
+  }
   .top__button{
     font-size: 23px;
   }
   .top__line{
     font-size: 24px;
   }
-  .title-h1{
-    font-size: 48px;
+  .opinion__title{
+    font-size: 16px;
+  }
+  .opinion__text{
+    font-size: 20px;
+  }
+  .skills__item{
+    font-size: 16px;
+  }
+  .skills__item b{
+    font-size: 18px;
+  }
+  .skills__item:before{
+    font-size: 33px;
+  }
+  .skills__item:last-child{
+    font-size: 24px;
+  }
+  .skills__item:last-child b{
+    font-size: 24px;
   }
 }
 
@@ -309,14 +612,26 @@ h1, h2, h3 {
   .button{
     font-size: 16px;
   }
+  .title-h1{
+    font-size: 28px;
+  }
+  .title-logo{
+    font-size: 22px;
+  }
+  .title-h2{
+    font-size: 28px;
+  }
+  .title-about{
+    font-size: 16px;
+  }
   .header__button{
     font-size: 13px;
   }
   .logo__title{
-    font-size: 14px;
+    font-size: 12px;
   }
   .logo__name{
-    font-size: 16px;
+    font-size: 14px;
   }
   .telephone{
     font-size: 10px;
@@ -324,14 +639,35 @@ h1, h2, h3 {
   .telephone__number{
     font-size: 20px;
   }
+  .top__text{
+    font-size: 16px;
+  }
   .top__button{
     font-size: 13px;
   }
   .top__line{
+    font-size: 12px;
+  }
+  .opinion__title{
+    font-size: 12px;
+  }
+  .opinion__text{
+    font-size: 16px;
+  }
+  .skills__item{
+    font-size: 12px;
+  }
+  .skills__item b{
     font-size: 14px;
   }
-  .title-h1{
-    font-size: 20px;
+  .skills__item:before{
+    font-size: 23px;
+  }
+  .skills__item:last-child{
+    font-size: 18px;
+  }
+  .skills__item:last-child b{
+    font-size: 18px;
   }
 }
 

@@ -191,8 +191,8 @@ html {
 }
 
 .icon-view {
-  width: 1.48em;
-  height: 1em;
+  width: 1.08em;
+  height: 0.7em;
   fill: #fff;
 }
 
@@ -545,6 +545,64 @@ h1, h2, h3 {
   background-color: transparent;
 }
 
+.problems {
+  padding-bottom: 4.4em;
+}
+
+.problems .title-h2 {
+  margin-bottom: 1.26em;
+}
+
+.problem_gray {
+  background-color: #f8f8f8;
+}
+
+.problem {
+  color: #4f4b4b;
+  padding: 1.9em;
+  *zoom: 1;
+}
+
+.problem:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.problem__title {
+  float: left;
+  font-family: "PT Serif Bold", sans-serif;
+  font-size: calc(15px + (20 - 15) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.05em;
+  max-width: 23%;
+}
+
+.problem__arrow {
+  display: inline-block;
+  position: relative;
+  top: 1em;
+  left: -0.51em;
+  background-image: url("../img/sprite.png");
+  width: 216px;
+  height: 7px;
+  background-position: 0px 0px;
+}
+
+.problem__about {
+  float: right;
+  max-width: 50%;
+  font-size: calc(12px + (16 - 12) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.3125em;
+}
+
+.training {
+  background-image: url(../img/training-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 660px;
+}
+
 @media (min-width: 960px){
   .button{
     font-size: 25px;
@@ -605,6 +663,12 @@ h1, h2, h3 {
   }
   .skills__item:last-child b{
     font-size: 24px;
+  }
+  .problem__title{
+    font-size: 20px;
+  }
+  .problem__about{
+    font-size: 16px;
   }
 }
 
@@ -668,6 +732,12 @@ h1, h2, h3 {
   }
   .skills__item:last-child b{
     font-size: 18px;
+  }
+  .problem__title{
+    font-size: 15px;
+  }
+  .problem__about{
+    font-size: 12px;
   }
 }
 

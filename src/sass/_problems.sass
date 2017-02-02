@@ -1,0 +1,30 @@
+.problems
+	padding-bottom: 4.4em 
+	.title-h2
+		margin-bottom: 1.26em 
+
+.problem_gray
+	background-color: #f8f8f8
+.problem
+	color: #4f4b4b
+	padding: 1.9em 
+	+clr
+	&__title
+		float: left
+		+PTs-bold
+		+css-lock(15, 20, 480, 960)
+		// font-size: 20px
+		line-height: 1.05em
+		max-width: 23% 
+	&__arrow
+		display: inline-block
+		position: relative
+		top: 1em
+		left: -0.51em 
+		+s(problem-arrow)
+	&__about
+		float: right
+		max-width: 50% 
+		+css-lock(12, 16, 480, 960)
+		// font-size: 16px
+		line-height: 1.3125em

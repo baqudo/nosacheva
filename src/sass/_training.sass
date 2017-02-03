@@ -1,4 +1,83 @@
 .training
 	background-image: url(../img/training-bg.jpg) 
 	+cover
-	height: 660px 
+	height: 100%
+	color: #fff 
+	text-align: center
+	padding: 2em 0 
+	&__title
+		+PTs
+		+css-lock(25, 43, 480, 960)
+		// font-size: 43px
+		line-height: 1.6em
+	&__date
+		+H
+		color: #f2326b
+		+css-lock(16, 24, 480, 960)
+		// font-size: 24px
+		line-height: 1.2em
+		margin-top: 0.8em 
+	&__about
+		+css-lock(12, 16, 480, 960)
+		// font-size: 16px
+		line-height: 1.4em
+	&__days
+		margin-top: em(45) 
+		+clr
+		.day
+			max-width: 220px
+			float: left
+			&:not(:last-child)
+				margin-right: 20px 
+	&__button
+		+css-lock(15, 23, 480, 960)
+		// font-size: 23px
+		line-height: em(42)
+		margin-top: 1.8em 
+		margin-bottom: 0.7em 
+.day
+	&__title
+		+bcpin
+		+H
+		+css-lock(16, 24, 480, 960)
+		// font-size: 24px
+		line-height: 1.75em
+	&__list
+		text-align: left
+		margin-top: 1.6em 
+	&__item
+		position: relative
+		padding: em(10) 0 
+		&:not(:last-child)
+			border-bottom: 1px solid rgba(78, 76, 85, 0.9)
+	&__time
+		+css-lock(10, 14, 480, 960)
+		// font-size: 14px
+		font-weight: 700
+		// line-height: em(20)
+		position: absolute
+		left: 0
+		top: 50% 
+		transform: translateY(-50%)
+	&__text
+		margin-left: 3.5em 
+		+css-lock(12, 16, 480, 960)
+		// font-size: 16px
+		line-height: em(20)
+		
+		// line-height: 21px
+
+
+.application-form
+	+bcpin
+.application
+	input
+		width: 220px
+		height: 59px
+		background-color: #ffffff
+
+		color: #7d7d7d
+		+H
+		font-size: 23px
+		font-weight: 400
+		line-height: 42px

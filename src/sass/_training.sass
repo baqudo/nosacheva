@@ -13,45 +13,65 @@
 	&__date
 		+H
 		color: #f2326b
-		+css-lock(16, 24, 480, 960)
+		+css-lock(18, 24, 480, 960)
 		// font-size: 24px
 		line-height: 1.2em
 		margin-top: 0.8em 
 	&__about
-		+css-lock(12, 16, 480, 960)
+		+css-lock(14, 16, 480, 960)
 		// font-size: 16px
 		line-height: 1.4em
 	&__days
-		margin-top: em(45) 
+
 		+clr
+		text-align: center
+		vertical-align: top
 		.day
-			max-width: 220px
+			width: 220px
 			float: left
 			&:not(:last-child)
-				margin-right: 20px 
+				margin-right: 20px
+		+r(939)
+			.day
+				width: 45% 
+				float: none
+				display: inline-block
+				vertical-align: top
+				margin-top: 10px 
+				&:not(:last-child)
+					margin-right: 0
+
+		+r(500)
+			.day
+				width: 85% 
 	&__button
-		+css-lock(15, 23, 480, 960)
+		+css-lock(18, 23, 480, 960)
 		// font-size: 23px
 		line-height: em(42)
 		margin-top: 1.8em 
-		margin-bottom: 0.7em 
+		margin-bottom: 0.7em
+
 .day
+	margin-top: em(45) 
 	&__title
 		+bcpin
 		+H
-		+css-lock(16, 24, 480, 960)
+		+css-lock(19, 24, 480, 960)
 		// font-size: 24px
 		line-height: 1.75em
+
 	&__list
 		text-align: left
 		margin-top: 1.6em 
+		+r(500)
+			margin-top: 0.5em 
 	&__item
 		position: relative
 		padding: em(10) 0 
 		&:not(:last-child)
 			border-bottom: 1px solid rgba(78, 76, 85, 0.9)
 	&__time
-		+css-lock(10, 14, 480, 960)
+		+css-lock(14, 14, 480, 960)
 		// font-size: 14px
 		font-weight: 700
 		// line-height: em(20)
@@ -61,23 +81,44 @@
 		transform: translateY(-50%)
 	&__text
 		margin-left: 3.5em 
-		+css-lock(12, 16, 480, 960)
+		+css-lock(15, 16, 480, 960)
 		// font-size: 16px
 		line-height: em(20)
-		
 		// line-height: 21px
 
 
 .application-form
 	+bcpin
+	text-align: center
+	+r(926)
+		padding: 0.5em 0 
 .application
 	input
-		width: 220px
+		width: 9.565em
+		display: inline-block
 		height: 59px
-		background-color: #ffffff
-
-		color: #7d7d7d
+		padding: 0 1em
+		margin: 1.8em 0
+		margin-right: 0.675em 
 		+H
 		font-size: 23px
-		font-weight: 400
-		line-height: 42px
+		+css-lock(18,23,480,960)
+		line-height: 2em
+		background-color: #ffffff
+		color: #000
+		+placeholder-color(#7d7d7d)
+		border-radius: 2em
+		
+		+r(926)
+			margin: 0.5em
+			width: 220px
+	input[type=submit]
+		border: 1px solid #ffffff
+		background-color: rgba(255, 6, 35, 0)
+		color: #fff 
+		transition: 0.5s
+		margin-right: 0
+		+r(926)
+			margin: 0.5em
+		&:hover
+			background-color: rgba(0, 0, 0, 0.25)

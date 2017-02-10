@@ -2750,3 +2750,10 @@ function sayHello() {
 })();
 
 sayHello();
+
+$('.reward-slider').slick({
+    arrow: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1
+});

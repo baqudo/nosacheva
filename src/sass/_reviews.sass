@@ -1,0 +1,36 @@
+.reviews
+
+.our-activity
+	+clr
+	border-collapse: separate
+	text-align: center
+	vertical-align: middle
+	padding-top: 6px 
+	margin: 0 -18px
+	border-spacing: 18px 0
+	+r(975)
+		margin: 0
+		border-spacing: 5px 0  
+.activity
+	display: table-cell
+	padding-top: 1.45835em
+	padding-bottom: 0.5em 
+	width: 32%
+	+H
+	color: #4f4b4b
+	font-size: 24px
+	+css-lock(16,24,480,960)
+	line-height: 1em
+	border-radius: 2px
+	border: 1px solid $color-pink
+	text-align: center
+	&__title
+		+cpin
+		font-size: 30px
+		+css-lock(24,30,480,960)
+		line-height: 0.75em
+		&.is-big
+			font-size: 48px
+			+css-lock(32,48,480,960)
+	&__text
+		margin-top: 0.45em 

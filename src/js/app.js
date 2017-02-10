@@ -5,3 +5,10 @@
 //=include lib/svgxuse.min.js
 
 sayHello();
+
+$('.reward-slider').slick({
+  arrow: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});

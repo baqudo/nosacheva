@@ -473,23 +473,24 @@ html {
 
 .button {
   display: inline-block;
+  text-decoration: none;
   font-size: calc(16px + (25 - 16) * ((100vw - 480px) / (960 - 480)));
   border: none;
   border-radius: 2em;
   line-height: 2.5em;
   padding: 0 1.2em;
   box-shadow: 0 3px 9px rgba(1, 1, 1, 0.47);
-  background-color: rgba(255, 6, 35, 0);
   background-image: linear-gradient(to top, #410891 0%, #410891 1%, #601fbb 100%, #601fbb 100%);
   color: #fff;
-  transition: 1s;
+  transition: 0.3s;
   outline: none;
 }
 
 .button:hover {
   outline: none;
   color: #fff;
-  background-color: #ff0623;
+  text-decoration: none;
+  box-shadow: inset 0 3px 9px rgba(1, 1, 1, 0.47), 0 3px 9px rgba(1, 1, 1, 0.47);
 }
 
 html {

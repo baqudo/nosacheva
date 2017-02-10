@@ -1,11 +1,9 @@
 ---
-title: Index page
+title: Nosacheva
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
-	{# variable example #}
 
 	{% include "partials/_top.html" %}
 	{% include "partials/_opinions.html" %}
@@ -14,20 +12,8 @@ title: Index page
 	{% include "partials/_training.html" %}
 	{% include "partials/_reviews.html" %}
 	{% include "partials/_rewards.html" %}
-	
-	{# partial example #}
-
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	{% include "partials/_videos.html" %}
+	{% include "partials/_payment.html" %}
+	{% include "partials/_address.html" %}
 
 {% endblock %}

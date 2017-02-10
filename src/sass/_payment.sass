@@ -1,0 +1,125 @@
+.payment
+	background: url(../img/mini-bg.png) 
+	color: #FFF
+	padding: 30px 0
+	&__title
+		+PTs
+		font-size: 48px
+		+css-lock(32,48,480,960)
+		margin: 0.45em 0
+		line-height: 1.2em
+		text-align: center
+	&__about
+		+clr
+
+	&__text
+		+H
+		line-height: 21px
+		color: #ffffff
+		width: 60% 
+		float: left
+		margin-right: 6em 
+		span
+			color: #ff6e4b
+			font-size: 24px
+			+css-lock(18,24,480,960)
+	&__price
+		float: left
+		+H-l
+		font-size: 18px
+		+css-lock(14, 18, 480, 960)
+		// line-height: 42px
+
+		&_old
+			margin-right: 2em 
+			p
+				text-decoration: line-through
+		p
+			+H
+			font-size: 30px
+			+css-lock(24,30,480,960)
+			font-weight: 700
+			line-height: 30px
+			text-transform: uppercase
+			
+
+//---------------------counter style---------------------------
+.counter
+	margin: 46px auto 3.1em
+	padding: 25px 0 
+	text-align: center
+	+clr
+	position: relative
+	color: #FFF 
+	box-shadow: 0 0 5px 5px rgba(1, 1, 1, 0.84)
+	border-radius: 2px
+	border: 1px solid rgba(45, 41, 78, 1)
+	background-color: rgba(45, 41, 78, 0.24)
+	// filter: blur(5px)
+	&__title
+		+H-l
+		font-size: 28px
+		+css-lock(20,28,480,960)
+		font-weight: normal
+		line-height: 1.5em
+		margin-bottom: 0.75em
+	&__item
+		+clr
+		display: inline-block
+		text-align: center
+		margin: 0 5px 
+	&__number
+		float: left 
+		margin: 0 3.5px 
+		width: em(60, 33)
+		height: em(59, 33)
+		color: #ffffff
+		+H
+		font-size: 33px
+		+css-lock(25,33,480,960)
+		font-weight: normal
+		line-height: em(59, 33)
+		box-shadow: 0 5px 6px rgba(1, 1, 1, 0.97)
+		border: 1px solid #e85b39
+
+		background-image: linear-gradient(to top, #e85b39 0%, #bf472b 49%,#e85b39 55%, #e85b39 100%)
+	&__name
+		font-family: "Helios Thin"
+		+H-l
+		font-size: 18px
+		+css-lock(14,18,480,960)
+		font-weight: normal
+		line-height: em(42, 18)
+		
+.payment-now
+	font-size: 28px
+	+css-lock(22,28,480,960)
+	line-height: 1.1em
+	+H-l
+	font-weight: normal
+	+clr
+	text-align: center
+	margin: 1em 0 0.7em
+	b
+		+H
+	&__text
+		text-align: left
+		float: left
+		width: 30%
+	&__price
+		display: inline-block
+		width: em(249, 48)
+		height: em(61, 48)
+		line-height: em(61, 48)
+		border: 1px solid #ffffff
+		background-color: rgba(255, 6, 35, 0)
+		border-radius: 2em
+		color: #ffffff
+		+H
+		font-size: 48px
+		+css-lock(32,48,480,960)
+		font-weight: normal
+		text-transform: uppercase
+	&__button
+		float: right
+		+css-lock(18,23,480,960)

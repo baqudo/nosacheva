@@ -11,7 +11,10 @@
 		text-align: center
 	&__about
 		+clr
-
+		+r(960)
+			padding: 0 0.5em 
+		+r(590)
+			text-align: center
 	&__text
 		+H
 		line-height: 21px
@@ -19,6 +22,8 @@
 		width: 60% 
 		float: left
 		margin-right: 6em 
+		+r(590)
+			width: 100% 
 		span
 			color: #ff6e4b
 			font-size: 24px
@@ -29,7 +34,11 @@
 		font-size: 18px
 		+css-lock(14, 18, 480, 960)
 		// line-height: 42px
-
+		+r(590)
+			float: none
+			display: inline-block
+			text-align: center
+			margin-top: 1em 
 		&_old
 			margin-right: 2em 
 			p
@@ -56,6 +65,8 @@
 	border: 1px solid rgba(45, 41, 78, 1)
 	background-color: rgba(45, 41, 78, 0.24)
 	// filter: blur(5px)
+	+r(960)
+		width: 95% 
 	&__title
 		+H-l
 		font-size: 28px
@@ -93,19 +104,26 @@
 		
 .payment-now
 	font-size: 28px
-	+css-lock(22,28,480,960)
+	+css-lock(18,28,480,960)
 	line-height: 1.1em
 	+H-l
 	font-weight: normal
 	+clr
 	text-align: center
 	margin: 1em 0 0.7em
+	+r(960)
+		padding: 0 0.25em
+		vertical-align: top
 	b
 		+H
 	&__text
 		text-align: left
 		float: left
 		width: 30%
+		+r(848)
+			width: 100% 
+			float: none
+			text-align: center
 	&__price
 		display: inline-block
 		width: em(249, 48)
@@ -117,9 +135,12 @@
 		color: #ffffff
 		+H
 		font-size: 48px
-		+css-lock(32,48,480,960)
+		+css-lock(26,48,480,960)
 		font-weight: normal
 		text-transform: uppercase
+		+r(848)
 	&__button
 		float: right
-		+css-lock(18,23,480,960)
+		+css-lock(15,23,480,960)
+		+r(848)
+			float: none

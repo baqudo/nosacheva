@@ -426,35 +426,35 @@ html {
 
 @font-face {
   font-family: Helios;
-  src: url("../fonts/Helios.woff2") format("woff2"), url("../fonts/Helios.woff") format("woff");
+  src: url("fonts/Helios.woff2") format("woff2"), url("fonts/Helios.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: HeliosLight;
-  src: url("../fonts/HeliosLight.woff2") format("woff2"), url("../fonts/HeliosLight.woff") format("woff");
+  src: url("fonts/HeliosLight.woff2") format("woff2"), url("fonts/HeliosLight.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Serif";
-  src: url("../fonts/PTSerif.woff2") format("woff2"), url("../fonts/PTSerif.woff") format("woff");
+  src: url("fonts/PTSerif.woff2") format("woff2"), url("fonts/PTSerif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Serif Bold";
-  src: url("../fonts/PTSerifBold.woff2") format("woff2"), url("../fonts/PTSerifBold.woff") format("woff");
+  src: url("fonts/PTSerifBold.woff2") format("woff2"), url("fonts/PTSerifBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Serif Bold Italic";
-  src: url("../fonts/PTSerifBoldItalic.woff2") format("woff2"), url("../fonts/PTSerifBoldItalic.woff") format("woff");
+  src: url("fonts/PTSerifBoldItalic.woff2") format("woff2"), url("fonts/PTSerifBoldItalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

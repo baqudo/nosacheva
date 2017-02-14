@@ -3717,12 +3717,16 @@ h1, h2, h3 {
   font-size: calc(14px + (22 - 14) * ((100vw - 480px) / (960 - 480)));
   line-height: 1.3em;
   margin: 1.6em 1em 1.7em 50%;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .top__button {
   margin-bottom: 4.45em;
   font-size: calc(13px + (23 - 13) * ((100vw - 480px) / (960 - 480)));
   margin-left: 50%;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 .top__line {

@@ -3695,6 +3695,8 @@ h1, h2, h3 {
 }
 
 .telephone__number {
+  display: block;
+  color: #FFF;
   font-family: Helios, sans-serif;
   font-size: calc(16px + (28 - 16) * ((100vw - 480px) / (960 - 480)));
   font-weight: 700;
@@ -3702,13 +3704,31 @@ h1, h2, h3 {
 }
 
 .top {
+  position: relative;
   background-color: #ccc;
-  background-image: url(../img/top-bg.jpg);
+  background-image: url(../img/top-bg-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   color: #ffffff;
   padding-top: 79px;
+  overflow: hidden;
+}
+
+.top .title-h1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.top__photo {
+  max-width: 75%;
+  max-height: 95%;
+  position: absolute;
+  bottom: -2%;
+  left: 15%;
+  z-index: 0;
+  -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.51));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.51));
 }
 
 .top__text {
@@ -3717,19 +3737,21 @@ h1, h2, h3 {
   font-size: calc(14px + (22 - 14) * ((100vw - 480px) / (960 - 480)));
   line-height: 1.3em;
   margin: 1.6em 1em 1.7em 50%;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .top__button {
   margin-bottom: 4.45em;
   font-size: calc(13px + (23 - 13) * ((100vw - 480px) / (960 - 480)));
   margin-left: 50%;
-  -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .top__line {
+  position: relative;
+  z-index: 2;
   text-align: center;
   font-family: "PT Serif Bold Italic", sans-serif;
   font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
@@ -4353,7 +4375,7 @@ h1, h2, h3 {
   color: #ffffff;
   font-family: Helios, sans-serif;
   font-size: 33px;
-  font-size: calc(25px + (33 - 25) * ((100vw - 480px) / (960 - 480)));
+  font-size: calc(20px + (33 - 20) * ((100vw - 480px) / (960 - 480)));
   font-weight: normal;
   line-height: 1.78788em;
   box-shadow: 0 5px 6px rgba(1, 1, 1, 0.97);
@@ -4408,14 +4430,14 @@ h1, h2, h3 {
   color: #ffffff;
   font-family: Helios, sans-serif;
   font-size: 48px;
-  font-size: calc(26px + (48 - 26) * ((100vw - 480px) / (960 - 480)));
+  font-size: calc(30px + (48 - 30) * ((100vw - 480px) / (960 - 480)));
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .payment-now__button {
   float: right;
-  font-size: calc(15px + (23 - 15) * ((100vw - 480px) / (960 - 480)));
+  font-size: calc(18px + (23 - 18) * ((100vw - 480px) / (960 - 480)));
 }
 
 .address__info {
@@ -4586,6 +4608,20 @@ h1, h2, h3 {
   }
 }
 
+@media only screen and (max-width: 1300px){
+  .top__photo{
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .top__photo{
+    max-width: 70%;
+    left: -35px;
+    bottom: -1.75%;
+  }
+}
+
 @media only screen and (max-width: 975px){
   .our-activity{
     margin: 0;
@@ -4667,7 +4703,10 @@ h1, h2, h3 {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    left: 30%;
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    left: 20%;
   }
 }
 
@@ -4680,17 +4719,29 @@ h1, h2, h3 {
 @media only screen and (max-width: 848px){
   .payment-now__text{
     width: 100%;
+    margin: 1em auto;
     float: none;
     text-align: center;
   }
+  .payment-now__price{
+    display: block;
+    margin: 0.5em auto;
+  }
   .payment-now__button{
     float: none;
+    margin: 0.5em auto;
   }
 }
 
 @media only screen and (max-width: 830px){
   .address__info{
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 805px){
+  .top{
+    padding-top: 30px;
   }
 }
 
@@ -4719,6 +4770,19 @@ h1, h2, h3 {
     float: none;
     width: 90%;
     margin: 30px auto;
+    padding-left: 100px;
+    padding-right: 0;
+  }
+  .opinion.is-horizontal .opinion__img{
+    left: -2%;
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .problem__arrow{
+    left: 15%;
+    -webkit-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    transform: scale(0.45);
   }
 }
 
@@ -4752,7 +4816,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 575px){
   .problem__arrow{
-    left: 15%;
+    left: 9%;
   }
   .problem__about{
     max-width: 60%;
@@ -4762,18 +4826,56 @@ h1, h2, h3 {
 @media only screen and (max-width: 520px){
   .header__button{
     float: right;
+    position: absolute;
+    right: 5px;
+    margin-top: 0;
+    padding: 0 1em;
   }
-  .telephone{
+  .telephone__title{
     display: none;
+  }
+  .telephone__number{
+    position: relative;
+    top: 32px;
+    right: 12px;
+  }
+}
+
+@media only screen and (max-width: 510px){
+  .counter{
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 500px){
+  .top__photo{
+    max-width: 90%;
+    left: -15%;
+    height: 90%;
+  }
   .training__days .day{
     width: 85%;
   }
   .day__list{
     margin-top: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 490px){
+  .problem__arrow{
+    left: 5%;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+}
+
+@media only screen and (max-width: 485px){
+  .counter__item{
+    margin: 0 1px;
+  }
+  .counter__number{
+    margin: 0 1px;
   }
 }
 
@@ -4899,7 +5001,7 @@ h1, h2, h3 {
     font-size: 20px;
   }
   .counter__number{
-    font-size: 25px;
+    font-size: 20px;
   }
   .counter__name{
     font-size: 14px;
@@ -4908,10 +5010,10 @@ h1, h2, h3 {
     font-size: 18px;
   }
   .payment-now__price{
-    font-size: 26px;
+    font-size: 30px;
   }
   .payment-now__button{
-    font-size: 15px;
+    font-size: 18px;
   }
   .address__info{
     font-size: 14px;
@@ -4929,10 +5031,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 420px){
   .top{
-    background: #000 url(../img/top-bg.jpg);
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
+    padding-top: 79px;
   }
   .top__text{
     margin: 1em 0 1em 50%;
@@ -4959,6 +5058,12 @@ h1, h2, h3 {
 @media only screen and (max-width: 400px){
   .video{
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .counter__item{
+    float: left;
   }
 }
 

@@ -14,7 +14,11 @@
       margin-top: 0.5em 
     +r(520)
       float: right
-
+      position: absolute
+      right: 5px 
+      margin-top: 0
+      // margin-bottom: 3px  
+      padding: 0 1em 
 .logo
   float: left
   text-align: left
@@ -43,14 +47,24 @@
   +css-lock(10, 13, 480, 960)
   +r(960)
       margin-top: 0.5em 
-  +r(520)
-    display: none
+  
   &__title
     opacity: 0.86
     line-height: 1.8em
+    +r(520)
+      display: none
   &__number
+    display: block
+    color: #FFF 
     +H
     +css-lock(16, 28, 480, 960)
     // font-size: em(28)
     font-weight: 700
     line-height: 1.05em
+    +r(520)
+      // float: right
+      position: relative
+      top: 32px 
+      right: 12px
+      // right: 15% 
+      // position: absolute

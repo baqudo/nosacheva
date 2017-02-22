@@ -1,15 +1,39 @@
 .top
+	position: relative
 	background-color: #ccc
-	background-image: url(../img/top-bg.jpg)
+	background-image: url(../img/top-bg-fon.jpg)
 	+cover
 	color: #ffffff
-	padding-top: 79px 
+	padding-top: 79px
+	overflow: hidden
+	+r(805)
+		padding-top: 30px 
 	+r(420)
-		background: #000 url(../img/top-bg.jpg)
-		background-size: cover
-		background-position: 50%
-		background-repeat: no-repeat
-		
+		padding-top: 79px 
+		// background: #000 url(../img/top-bg-fon.jpg)
+		// background-size: cover
+		// background-position: 50%
+		// background-repeat: no-repeat
+	.title-h1
+		animation-delay: 0.3s
+	&__photo
+		max-width: 75% 
+		max-height: 95%  
+		position: absolute
+		bottom: -2% 
+		left: 15%
+		z-index: 0 
+		filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.51))
+		+r(1300)
+			left: 0
+		+r(1100)
+			max-width: 70% 
+			left: -35px 
+			bottom: -1.75% 
+		+r(500)
+			max-width: 90% 
+			left: -15% 
+			height: 90% 
 	&__text
 		opacity: 0.9
 		+H
@@ -17,7 +41,7 @@
 		line-height: 1.3em 
 		// font-size: em(22)
 		margin: 1.6em 1em 1.7em 50% 
-		animation-delay: 0.5s 
+		animation-delay: 0.6s 
 		+r(420)
 			margin: 1em 0 1em 50% 
 	&__button
@@ -25,10 +49,12 @@
 		+css-lock(13, 23, 480, 960)
 		// font-size: 23px
 		margin-left: 50% 
-		animation-delay: 0.75s 
+		animation-delay: 0.9s 
 		+r(420)
 			margin-bottom: 1em 
 	&__line
+		position: relative
+		z-index: 2 
 		text-align: center
 		+PTs-bi
 		+css-lock(14, 24, 480, 960)

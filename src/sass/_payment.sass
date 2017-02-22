@@ -67,6 +67,8 @@
 	// filter: blur(5px)
 	+r(960)
 		width: 95% 
+	+r(510)
+		width: 100% 
 	&__title
 		+H-l
 		font-size: 28px
@@ -79,6 +81,10 @@
 		display: inline-block
 		text-align: center
 		margin: 0 5px 
+		+r(485)
+			margin: 0 1px
+		+r(350)
+			float: left
 	&__number
 		float: left 
 		margin: 0 3.5px 
@@ -87,13 +93,14 @@
 		color: #ffffff
 		+H
 		font-size: 33px
-		+css-lock(25,33,480,960)
+		+css-lock(20,33,480,960)
 		font-weight: normal
 		line-height: em(59, 33)
 		box-shadow: 0 5px 6px rgba(1, 1, 1, 0.97)
 		border: 1px solid #e85b39
-
 		background-image: linear-gradient(to top, #e85b39 0%, #bf472b 49%,#e85b39 55%, #e85b39 100%)
+		+r(485)
+			margin: 0 1px
 	&__name
 		font-family: "Helios Thin"
 		+H-l
@@ -122,6 +129,7 @@
 		width: 30%
 		+r(848)
 			width: 100% 
+			margin: 1em auto
 			float: none
 			text-align: center
 	&__price
@@ -135,12 +143,15 @@
 		color: #ffffff
 		+H
 		font-size: 48px
-		+css-lock(26,48,480,960)
+		+css-lock(30,48,480,960)
 		font-weight: normal
 		text-transform: uppercase
 		+r(848)
+			display: block
+			margin: 0.5em auto
 	&__button
 		float: right
-		+css-lock(15,23,480,960)
+		+css-lock(18,23,480,960)
 		+r(848)
 			float: none
+			margin: 0.5em auto

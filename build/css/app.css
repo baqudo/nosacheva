@@ -4151,6 +4151,7 @@ h1, h2, h3 {
   z-index: 2;
   text-align: center;
   font-family: "PT Serif Bold Italic", sans-serif;
+  font-size: 24px;
   font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
   line-height: 2.3em;
   background-image: linear-gradient(to right, transparent 3%, rgba(203, 52, 97, 0.93) 15%, rgba(203, 52, 97, 0.93) 85%, transparent 97%);

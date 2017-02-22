@@ -4,7 +4,7 @@
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
 //=include jquery.countdown.js
-//=include flipclock.js
+//=include flipclock.min.js
 
 sayHello();
 $('.reward-slider').slick({

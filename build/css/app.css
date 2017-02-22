@@ -4093,6 +4093,7 @@ h1, h2, h3 {
 
 .telephone__number {
   display: block;
+  text-decoration: none;
   color: #FFF;
   font-family: Helios, sans-serif;
   font-size: calc(16px + (28 - 16) * ((100vw - 480px) / (960 - 480)));

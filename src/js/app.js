@@ -56,10 +56,16 @@ $('.js-payment').on("click", function(event) {
     $('body,html').animate({scrollTop: top}, 1600);
 });
 
-var dateTime = 3600 * 24 * 3;
-
 $(function () {
-  var clock = $('#clock').FlipClock(dateTime, {
+
+  var clock = $('#clock');
+  var datetime = clock.data('timer');
+  var datetimeEnd = new Date(datetime);
+  var datetimeNow = Date.now();
+  var timer = datetimeEnd - datetimeNow;
+  timer /= 1000;
+
+  clock.FlipClock(timer, {
     clockFace : 'DailyCounter',
     countdown: true
   });

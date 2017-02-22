@@ -3,9 +3,10 @@
 //=include lib/jquery.min.js
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
+//=include jquery.countdown.js
+//=include flipclock.js
 
 sayHello();
-
 $('.reward-slider').slick({
   arrow: true,
   infinite: true,
@@ -53,4 +54,13 @@ $('.js-payment').on("click", function(event) {
         top = $(id).offset().top - 50;
     //анимируем переход на расстояние - top за 1600 мс
     $('body,html').animate({scrollTop: top}, 1600);
+});
+
+var dateTime = 3600 * 24 * 3;
+
+$(function () {
+  var clock = $('#clock').FlipClock(dateTime, {
+    clockFace : 'DailyCounter',
+    countdown: true
+  });
 });

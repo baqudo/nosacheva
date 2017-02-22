@@ -61,13 +61,11 @@
 	position: relative
 	color: #FFF 
 	box-shadow: 0 0 5px 5px rgba(1, 1, 1, 0.84)
-	border-radius: 2px
 	border: 1px solid rgba(45, 41, 78, 1)
 	background-color: rgba(45, 41, 78, 0.24)
-	// filter: blur(5px)
 	+r(960)
 		width: 95% 
-	+r(510)
+	+r(600)
 		width: 100% 
 	&__title
 		+H-l
@@ -76,32 +74,19 @@
 		font-weight: normal
 		line-height: 1.5em
 		margin-bottom: 0.75em
-	&__item
+	&__clock
+		display: block
+		max-width: 565px
+		margin: 0 auto 
 		+clr
-		display: inline-block
-		text-align: center
-		margin: 0 5px 
-		+r(485)
-			margin: 0 1px
+		+r(600)
+			max-width: 345px
 		+r(350)
-			float: left
-	&__number
-		float: left 
-		margin: 0 3.5px 
-		width: em(60, 33)
-		height: em(59, 33)
-		color: #ffffff
-		+H
-		font-size: 33px
-		+css-lock(20,33,480,960)
-		font-weight: normal
-		line-height: em(59, 33)
-		box-shadow: 0 5px 6px rgba(1, 1, 1, 0.97)
-		border: 1px solid #e85b39
-		background-image: linear-gradient(to top, #e85b39 0%, #bf472b 49%,#e85b39 55%, #e85b39 100%)
-		+r(485)
-			margin: 0 1px
-	&__name
+			max-width: 265px 
+	&__item
+		float: left
+		width: 25% 
+		text-align: center
 		font-family: "Helios Thin"
 		+H-l
 		font-size: 18px
@@ -155,3 +140,29 @@
 		+r(848)
 			float: none
 			margin: 0.5em auto
+
+
+.flip-clock-wrapper 
+	ul 
+		position: relative
+		float: left
+		margin: 0 3.5px
+		width: 60px
+		height: 60px
+		font-size: 33px
+		line-height: 60px
+		+r(600)
+			margin: 0 1px
+			width: 40px
+			height: 40px
+			font-size: 23px
+			line-height: 40px
+		+r(350)
+			width: 30px 
+
++r(600)
+	.flip-clock-wrapper ul li
+		line-height: 40px
+	.flip-clock-divider
+		height: 40px
+		width: 3px 

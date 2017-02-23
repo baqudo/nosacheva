@@ -3938,6 +3938,10 @@ h1, h2, h3 {
   font-family: "PT Serif", sans-serif;
 }
 
+.out {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -4227,6 +4231,7 @@ h1, h2, h3 {
   font-size: 0;
   margin-top: 30px;
   padding-bottom: 60px;
+  vertical-align: top;
 }
 
 .opinions-box:after {
@@ -4236,10 +4241,11 @@ h1, h2, h3 {
 }
 
 .opinion.is-horizontal {
+  display: inline-block;
   font-size: calc(16px + (20 - 16) * ((100vw - 480px) / (960 - 480)));
   position: relative;
   text-align: left;
-  float: left;
+  vertical-align: top;
   padding-left: 140px;
   padding-right: 20px;
   margin-top: 30px;
@@ -5049,6 +5055,12 @@ h1, h2, h3 {
   }
 }
 
+@media only screen and (max-width: 950px){
+  .opinion.is-horizontal .opinion__img{
+    left: 10px;
+  }
+}
+
 @media only screen and (max-width: 939px){
   .training__days .day{
     width: 45%;
@@ -5159,14 +5171,15 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 650px){
   .opinion.is-horizontal{
+    min-height: 90px;
     float: none;
     width: 90%;
-    margin: 30px auto;
-    padding-left: 100px;
+    margin: 10px auto;
+    padding-left: 120px;
     padding-right: 0;
   }
   .opinion.is-horizontal .opinion__img{
-    left: -2%;
+    left: 15px;
     max-width: 90px;
     max-height: 90px;
   }

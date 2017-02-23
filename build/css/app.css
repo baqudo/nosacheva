@@ -4123,11 +4123,13 @@ h1, h2, h3 {
 }
 
 .top__photo {
-  max-width: 75%;
-  max-height: 95%;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
   position: absolute;
   bottom: -2%;
-  left: 15%;
+  left: 13.5%;
   z-index: 0;
   -webkit-filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.51));
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.51));
@@ -5014,8 +5016,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 1100px){
   .top__photo{
-    max-width: 70%;
-    left: -35px;
+    left: -5%;
     bottom: -1.75%;
   }
 }
@@ -5084,6 +5085,12 @@ h1, h2, h3 {
   }
   .application input[type=submit]{
     margin: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .top__photo{
+    left: -15%;
   }
 }
 
@@ -5160,6 +5167,12 @@ h1, h2, h3 {
   }
   .video:not(:last-child){
     margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 770px){
+  .top__photo{
+    left: -20%;
   }
 }
 
@@ -5268,9 +5281,10 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 500px){
   .top__photo{
-    max-width: 90%;
-    left: -15%;
-    height: 90%;
+    max-width: 100%;
+    left: -22%;
+    height: auto;
+    width: auto;
   }
   .training__days .day{
     width: 85%;

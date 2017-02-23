@@ -4566,8 +4566,8 @@ h1, h2, h3 {
 
 .activity {
   display: table-cell;
+  padding: 0.5em;
   padding-top: 1.45835em;
-  padding-bottom: 0.5em;
   width: 32%;
   font-family: Helios, sans-serif;
   color: #4f4b4b;

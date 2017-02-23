@@ -5008,7 +5008,7 @@ h1, h2, h3 {
   }
 }
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1370px){
   .top__photo{
     left: 0;
   }
@@ -5282,7 +5282,7 @@ h1, h2, h3 {
 @media only screen and (max-width: 500px){
   .top__photo{
     max-width: 100%;
-    left: -22%;
+    max-height: 95%;
     height: auto;
     width: auto;
   }
